@@ -1,0 +1,19 @@
+{% extends "budget/layout.html" %}
+
+
+{% block title %}New User{% endblock %}
+
+
+{% block body %}
+<div class="form">
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="last" placeholder="Last Name">
+    <input type="text" name="username" placeholder="Username">
+    <input type="text" name="email" placeholder="Email">
+    <input type="password" name="password" placeholder="Password">
+    <input type="submit" value="Register">
+</form>
+</div>
+{% endblock %}
